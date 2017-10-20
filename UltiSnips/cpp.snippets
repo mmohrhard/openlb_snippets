@@ -1,0 +1,12 @@
+extends all, c
+
+snippet tem "template<typename T, template<typename U> class Lattice>"
+template<typename T, template<typename U> class Lattice>
+endsnippet
+
+snippet temfunc "Template member function"
+template<typename T, template<typename U> class Lattice>
+${1:void} ${2:ClassName}<T,Lattice>::${3:functionName}(${4:params}) {
+ ${5}
+}
+endsnippet
